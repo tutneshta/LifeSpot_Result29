@@ -1,4 +1,5 @@
 ﻿let session = new Map();
+
 function handleSession() {
     // Сохраним время начала сессии
     session.set("startDate", new Date().toLocaleString())
