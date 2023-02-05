@@ -23,11 +23,19 @@
 
 " size=50%>
     <script>
-        // Создадим и обработаем сессию
-        let session = handleSession();
+        // Проверка на возраст
+        /*checkAge();*/
 
-        // Логируем в консоль.
-        sessionLog(session);
+        // сохранение сессии
+        handleSession()
+
+        // вывод данных сессии в консоль
+        sessionLog();
+
+        // функция для получения пользовательского ввода
+        const inputParseFunction = function () {
+            return document.getElementsByTagName('input')[0].value.toLowerCase();
+        }
     </script>
 
 </header>
